@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loïc Dumas · Data & AI Product Manager</title>
+<meta name="description" content="Loïc Dumas, Data & AI Product Manager. Ask me anything about my AI products, my way of working and my path.">
+<meta property="og:title" content="Loïc Dumas · Data & AI Product Manager">
+<meta property="og:description" content="I build AI products, so my portfolio is one. Ask me anything.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%233F8792'/%3E%3Ctext x='32' y='41' font-family='Georgia' font-size='26' fill='white' text-anchor='middle'%3ELD%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+<div class="glow"></div>
+
+<header class="bar"><div class="bar-in">
+  <a class="logo" href="#/">Loïc Dumas<span>.</span></a>
+  <nav class="right">
+    <a class="hide-m" id="cvLink" href="#" download data-t="cv"></a>
+    <a class="hide-m" id="mailLink" href="#" data-t="contact"></a>
+    <div class="lang"><button data-l="en">EN</button><button data-l="fr">FR</button></div>
+  </nav>
+</div></header>
+
+<!-- ================= HOME: cards + chat ================= -->
+<main id="home">
+  <div class="cards">
+    <button class="card play" data-play="1"><small data-t="cPlay"></small><h3 data-t="cPlayH"></h3><div class="lbl" data-t="cPlayL"></div><span class="pbtn">▶</span></button>
+    <button class="card" data-ask="impact"><small data-t="cImpact"></small><div class="big"><span class="metric" id="metric"></span></div><div class="lbl" id="mlbl"></div></button>
+    <button class="card" data-ask="projects"><small data-t="cProjects"></small><div class="big dots" id="dots"></div></button>
+    <button class="card" data-ask="method"><small data-t="cMethod"></small><div class="big steps" id="steps"></div><div class="lbl" data-t="cMethodL"></div></button>
+    <button class="card" data-ask="finance"><small data-t="cOff"></small><span class="badge"><i></i><span data-t="cfaBadge"></span></span><div class="lbl" data-t="cOffL"></div></button>
+  </div>
+  <div class="main">
+    <div class="thread" id="thread">
+      <div class="hello">
+        <span class="av" id="av"></span>
+        <div><h1 data-t="hello"></h1><p data-t="sub"></p></div>
+      </div>
+    </div>
+    <div class="chips" id="chips"></div>
+    <form class="input" id="form"><input id="inp" autocomplete="off" aria-label="Ask a question"><button aria-label="Send">↑</button></form>
+    <div class="hint" id="hint" data-t="hint"></div>
+  </div>
+</main>
+
+<!-- ================= PAGES: project / method ================= -->
+<div id="page"></div>
+
+<!-- ================= GAME ================= -->
+<div class="modal" id="modal"><div class="game" id="game"></div></div>
+
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
